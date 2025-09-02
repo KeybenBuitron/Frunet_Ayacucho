@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frunet-Ayacucho - Ensaladas de Frutas Frescas y Naturales</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>🍓 Frunet-Ayacucho</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#promociones">Promociones</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#carrito" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Ensaladas de Frutas Frescas y Naturales</h1>
+            <p>Descubre el sabor auténtico de las frutas de temporada de Ayacucho</p>
+            <div class="hero-buttons">
+                <a href="#productos" class="btn btn-primary">Ver Productos</a>
+                <a href="#contacto" class="btn btn-secondary">Hacer Pedido</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="ensalada-1.jpg" alt="Ensalada de frutas frescas">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <h2>Nuestra Misión</h2>
+            <p>En Frunet-Ayacucho nos dedicamos a elaborar y vender ensaladas de frutas frescas, naturales y de alta calidad. Nuestro objetivo es brindar una experiencia saludable, deliciosa y accesible para todos, fomentando hábitos de alimentación saludable.</p>
+            
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-leaf"></i>
+                    <h3>100% Natural</h3>
+                    <p>Frutas cuidadosamente seleccionadas de origen local</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-heart"></i>
+                    <h3>Saludable</h3>
+                    <p>Combinaciones nutritivas que cuidan tu bienestar</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-star"></i>
+                    <h3>Calidad Premium</h3>
+                    <p>Frescor y sabor excepcionales garantizados</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="productos" class="products">
+        <div class="container">
+            <h2>Nuestros Productos</h2>
+            <p>Descubre nuestras deliciosas combinaciones de frutas frescas</p>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="ensalada-1.jpg" alt="Ensalada Clásica">
+                    <div class="product-info">
+                        <h3>Ensalada Clásica</h3>
+                        <p>Mezcla perfecta de manzana, plátano, uvas y fresas</p>
+                        <div class="product-price">S/ 8.00</div>
+                        <button class="btn btn-primary add-to-cart" data-id="1" data-name="Ensalada Clásica" data-price="8.00">
+                            Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="ensalada-2.jpg" alt="Ensalada Tropical">
+                    <div class="product-info">
+                        <h3>Ensalada Tropical</h3>
+                        <p>Piña, mango, papaya y coco fresco</p>
+                        <div class="product-price">S/ 10.00</div>
+                        <button class="btn btn-primary add-to-cart" data-id="2" data-name="Ensalada Tropical" data-price="10.00">
+                            Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="ensalada-3.jpg" alt="Ensalada Cítrica">
+                    <div class="product-info">
+                        <h3>Ensalada Cítrica</h3>
+                        <p>Naranja, mandarina, limón y pomelo</p>
+                        <div class="product-price">S/ 9.00</div>
+                        <button class="btn btn-primary add-to-cart" data-id="3" data-name="Ensalada Cítrica" data-price="9.00">
+                            Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="ensalada-4.jpg" alt="Ensalada Berry">
+                    <div class="product-info">
+                        <h3>Ensalada Berry</h3>
+                        <p>Fresas, arándanos, frambuesas y moras</p>
+                        <div class="product-price">S/ 12.00</div>
+                        <button class="btn btn-primary add-to-cart" data-id="4" data-name="Ensalada Berry" data-price="12.00">
+                            Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="ensalada-5.jpg" alt="Ensalada Verde">
+                    <div class="product-info">
+                        <h3>Ensalada Verde</h3>
+                        <p>Kiwi, uvas verdes, manzana verde y pera</p>
+                        <div class="product-price">S/ 9.50</div>
+                        <button class="btn btn-primary add-to-cart" data-id="5" data-name="Ensalada Verde" data-price="9.50">
+                            Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="ensalada-6.jpg" alt="Ensalada Premium">
+                    <div class="product-info">
+                        <h3>Ensalada Premium</h3>
+                        <p>Combinación exclusiva con frutas exóticas</p>
+                        <div class="product-price">S/ 15.00</div>
+                        <button class="btn btn-primary add-to-cart" data-id="6" data-name="Ensalada Premium" data-price="15.00">
+                            Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promotions Section -->
+    <section id="promociones" class="promotions">
+        <div class="container">
+            <h2>Promociones Especiales</h2>
+            <div class="promotions-grid">
+                <div class="promotion-card">
+                    <div class="promotion-badge">¡OFERTA!</div>
+                    <h3>Combo Familiar</h3>
+                    <p>3 ensaladas por el precio de 2</p>
+                    <div class="promotion-price">
+                        <span class="old-price">S/ 30.00</span>
+                        <span class="new-price">S/ 20.00</span>
+                    </div>
+                    <button class="btn btn-secondary">Aprovechar Oferta</button>
+                </div>
+
+                <div class="promotion-card">
+                    <div class="promotion-badge">¡NUEVO!</div>
+                    <h3>Descuento Estudiantil</h3>
+                    <p>20% de descuento presentando carné</p>
+                    <div class="promotion-price">
+                        <span class="discount">-20%</span>
+                    </div>
+                    <button class="btn btn-secondary">Ver Detalles</button>
+                </div>
+
+                <div class="promotion-card">
+                    <div class="promotion-badge">¡FLASH!</div>
+                    <h3>Happy Hour</h3>
+                    <p>2x1 en todas las ensaladas de 2:00 PM a 4:00 PM</p>
+                    <div class="promotion-price">
+                        <span class="time">2:00 PM - 4:00 PM</span>
+                    </div>
+                    <button class="btn btn-secondary">Aprovechar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2>Haz tu Pedido</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>926 001 110</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Ayacucho, Perú</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Lun - Dom: 8:00 AM - 8:00 PM</span>
+                    </div>
+                    
+                    <div class="delivery-info">
+                        <h4>Puntos de Venta</h4>
+                        <ul>
+                            <li>Centros Educativos</li>
+                            <li>Parques y Plazas</li>
+                            <li>Oficinas y Empresas</li>
+                            <li>Eventos Especiales</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="orderForm">
+                    <h3>Formulario de Pedido</h3>
+                    <div class="form-group">
+                        <label for="name">Nombre Completo *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Teléfono *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Ubicación de Entrega *</label>
+                        <input type="text" id="location" name="location" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Fecha de Entrega *</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Hora de Entrega *</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="notes">Notas Adicionales</label>
+                        <textarea id="notes" name="notes" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Pedido</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <div id="cart-items"></div>
+            <div class="cart-total">
+                <h3>Total: S/ <span id="cart-total">0.00</span></h3>
+            </div>
+            <div class="cart-actions">
+                <button class="btn btn-secondary" id="clear-cart">Vaciar Carrito</button>
+                <button class="btn btn-primary" id="checkout">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🍓 Frunet-Ayacucho</h3>
+                    <p>Ensaladas de frutas frescas y naturales para una vida saludable</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#promociones">Promociones</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-phone"></i> 926 001 110</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Ayacucho, Perú</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Frunet-Ayacucho. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
