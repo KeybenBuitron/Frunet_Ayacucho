@@ -1,0 +1,20 @@
+# Render Configuration for Frunet-Ayacucho
+# Static Site Configuration
+
+services:
+  - type: web
+    name: frunet-ayacucho
+    env: static
+    buildCommand: echo "Static site - no build required"
+    staticPublishPath: .
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: SITE_NAME
+        value: "Frunet-Ayacucho"
+      - key: SITE_DESCRIPTION
+        value: "Ensaladas de frutas frescas y naturales"

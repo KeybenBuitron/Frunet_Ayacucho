@@ -38,11 +38,26 @@ Frunet-Ayacucho es un sistema de ventas y promoción web completo para una empre
 
 ## 🚀 Instalación y Uso
 
-### Requisitos
+### 🌐 **Despliegue en Render (Recomendado)**
+Tu sitio ya está configurado para Render. Sigue estos pasos:
+
+1. **Ve a [render.com](https://render.com)** y crea una cuenta
+2. **Conecta tu GitHub** y selecciona el repositorio `Frunet_Ayacucho`
+3. **Crea un Static Site** con la configuración automática
+4. **¡Tu sitio estará online en minutos!**
+
+**URL del sitio**: `https://frunet-ayacucho.onrender.com`
+
+📖 **Guía completa**: Ver `RENDER_DEPLOY.md`
+
+### 💻 **Instalación Local**
+Si prefieres ejecutar localmente:
+
+#### Requisitos
 - Navegador web moderno (Chrome, Firefox, Safari, Edge)
 - Conexión a internet para fuentes y iconos
 
-### Pasos de Instalación
+#### Pasos de Instalación
 
 1. **Descargar archivos**
    - Asegúrate de tener todos los archivos en la misma carpeta:
